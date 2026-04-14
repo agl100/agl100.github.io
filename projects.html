@@ -4,7 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avery Lane | Portfolio</title>
-  <style>
+   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -18,6 +22,33 @@
       padding: 2rem;
       text-align: center;
     }
+    .top-nav {
+      background: #111;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      margin: 0;
+      padding: 1rem 3rem 1rem 2rem;
+      width: 100%;
+      box-sizing: border-box;
+    
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .top-nav a {
+      color: white;
+      margin-left: 28px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.5px;
+    }
+    
+    .top-nav a:hover {
+      color: #B6A4A4;
+    }
+        
     nav {
       margin-top: 1rem;
     }
@@ -26,10 +57,14 @@
       margin: 0 10px;
       text-decoration: none;
     }
+    nav a:visited {
+      color: white;
+    }
+    
     main {
       max-width: 1200px;
       margin: 2rem auto;
-      background: f7f7f7;
+      background: #f7f7f7;
       padding: 2rem;
       border-radius: 10px;
     }
@@ -47,20 +82,75 @@
       border-radius: 8px;
     }
     footer {
+      background: #827A7A;
       text-align: center;
       padding: 1.5rem;
-      color: #666;
+      color: #white;
     }
-  </style>
+    .about-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    }
+    .social-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-right: 10px;
+    }
+    .social-link:hover {
+      background: #444;
+    }
+    .social-link:visited {
+      color: white;
+    }
+    a {
+      color: #997F7F;        /* link color */
+      text-decoration: none;
+    }
+    a:visited {
+      color: #997F7F;       
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:active {
+      color: #745D5D;   
+    }
+
+    .skills {
+      margin-top: 1rem;
+    }
+    .skills span {
+      display: inline-block;
+      background: #BFB0B0;
+      color: #333;
+      padding: 6px 12px;
+      margin: 5px 5px 0 0;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+      </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+  <nav class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
   <header>
     <h1>Avery Lane</h1>
     <p>Information Science & Data Analytics</p>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
