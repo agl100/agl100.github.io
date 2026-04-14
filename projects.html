@@ -133,6 +133,22 @@
       border-radius: 20px;
       font-size: 0.9rem;
     }
+
+     .project-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+      .project-text {
+        flex: 1;
+      }
+      .project-img {
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+      }
       </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -159,15 +175,22 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <h3>Project Title 1</h3>
+        <h3>Exploring Factors Influencing Graduate Admissions Decisions</h3>
         <p>Brief description of what you made and what tools you used.</p>
         <p><a href="#">View Project</a></p>
       </div>
 
       <div class="project">
-        <h3>Project Title 2</h3>
-        <p>Brief description of this project.</p>
-        <p><a href="#">View Project</a></p>
+        <div class="project-content">
+        <div class="project-text">
+          <h3>Project Title 2</h3>
+          <p>Description of project details.</p>
+          <a href="#">View Full Project</a>
+         </div>
+
+          <img src="gradproj1.png" alt="Project screenshot" class="project-img">
+
+        </div>
       </div>
     </section>
     
