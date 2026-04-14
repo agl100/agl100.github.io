@@ -20,20 +20,27 @@
     }
     .top-nav {
       background: #111;
-      padding: 0.75rem;
-      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000
+      padding: 0.75rem 2rem;
+    
+      display: flex;
+      justify-content: flex-end;
     }
-
     .top-nav a {
       color: white;
-      margin: 0 15px;
+      margin-left: 20px;
       text-decoration: none;
-      font-weight: 500;
+    
+      font-weight: 600;      /* makes it bolder */
+      font-size: 1rem;       /* slightly bigger */
+      letter-spacing: 0.5px; /* cleaner look */
     }
-
     .top-nav a:hover {
-      text-decoration: underline;
+      color: #00bfff; /* nice accent color */
     }
+    
     nav {
       margin-top: 1rem;
     }
