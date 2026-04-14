@@ -66,11 +66,23 @@
     border-radius: 6px;
     margin-right: 10px;
     }
-
-.social-link:hover {
+    .social-link:hover {
   background: #444;
-}
-  </style>
+    }
+    a {
+      color: #0077cc;        /* link color */
+      text-decoration: none;
+    }
+    a:visited {
+      color: #0077cc;       
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:active {
+      color: #005fa3;   
+    }
+      </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -114,8 +126,7 @@
       </a></p>
       <p><a href="https://github.com/yourusername" class="social-link">
         <i class="fab fa-github"></i> GitHub
-      </a> </p>
-      <p><a href="https://linkedin.com/in/yourprofile" target="_blank">
+      </a> <a href="https://linkedin.com/in/yourprofile" class="social-link">
         <i class="fab fa-linkedin"></i> LinkedIn
       </a></p>
     </section>
