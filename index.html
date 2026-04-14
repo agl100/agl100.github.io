@@ -57,6 +57,10 @@
       margin: 0 10px;
       text-decoration: none;
     }
+    nav a:visited {
+      color: white;
+    }
+    
     main {
       max-width: 1200px;
       margin: 2rem auto;
@@ -116,6 +120,19 @@
     a:active {
       color: #745D5D;   
     }
+
+    .skills {
+      margin-top: 1rem;
+    }
+    .skills span {
+      display: inline-block;
+      background: #BFB0B0;
+      color: #333;
+      padding: 6px 12px;
+      margin: 5px 5px 0 0;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
       </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -157,12 +174,32 @@
 
     <section id="skills">
       <h2>Skills</h2>
-      <div class="skills">
-        <span>R</span>
-        <span>SQL</span>
-        <span>Data Analysis</span>
-        <span>Data Visualization</span>
-        <span>Statistical Modeling</span>
+      <div class="skill-category">
+        <h3>Data Analysis & Methods</h3>
+        <div class="skills">
+          <span>Data Analysis</span>
+          <span>Data Cleaning</span>
+          <span>Statistical Analysis</span>
+          <span>Predictive Modeling</span>
+        </div>
+      </div>
+    
+      <div class="skill-category">
+        <h3>Tools & Technologies</h3>
+        <div class="skills">
+          <span>R</span>
+          <span>SQL</span>
+          <span>Excel</span>
+        </div>
+      </div>
+    
+      <div class="skill-category">
+        <h3>Visualization & Communication</h3>
+        <div class="skills">
+          <span>Data Visualization</span>
+          <span>Reporting</span>
+          <span>Data Storytelling</span>
+        </div>
       </div>
       <p><a href="___" target="_blank">Link to nothing</a></p>
     </section>
